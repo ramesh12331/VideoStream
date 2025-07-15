@@ -1,0 +1,82 @@
+
+import { AiOutlineMenu, AiOutlineBell } from "react-icons/ai";
+import { CiSearch } from "react-icons/ci";
+import { IoMdMic } from "react-icons/io";
+import { RiVideoAddLine } from "react-icons/ri";
+
+// import ThemeToggleButton from "./ThemeToggleButton";
+
+import { IoSearch } from "react-icons/io5";
+
+
+const Head = () => {
+  
+  return (
+    <div className="flex bg-white justify-between px-6 py-2 shadow-lg dark:bg-gray-900 text-black dark:text-white fixed top-0 left-0 right-0 z-50">
+      {/* Left - Menu & Logo */}
+      <div className="flex items-center space-x-4">
+        <AiOutlineMenu
+          
+          className="text-xl cursor-pointer"
+        />
+        <img
+          className="w-20 dark:bg-white rounded-lg"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/1024px-Logo_of_YouTube_%282015-2017%29.svg.png"
+          alt="YouTube Logo"
+        />
+      </div>
+
+      {/* Center - Search Bar */}
+      <div className="flex max-w-[600px] mx-4 relative ">
+        <div className="w-full px-3 py-2 border rounded-l-full bg-white dark:bg-gray-700">
+          <input
+            type="text"
+            placeholder="Search"
+            className="outline-none bg-transparent w-full text-black dark:text-white"
+           
+          />
+        </div>
+        <button
+          className="px-4 py-2 border rounded-r-full bg-gray-100 dark:bg-green-600"
+          
+        >
+          <CiSearch className="font-extrabold" />
+        </button>
+
+        {/* Suggestions Dropdown */}
+        {/* {showSuggestions && suggestion.length > 0 && (
+          <ul className="absolute top-full left-0 w-full bg-white dark:bg-gray-800 shadow-lg rounded-lg mt-1 z-50">
+            {suggestion.map((s) => (
+              <li
+                key={s}
+                className="flex items-center gap-2 p-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer"
+                onMouseDown={() => navigate(`/search?q=${s}`)}
+              >
+                <IoSearch /> {s}
+              </li>
+            ))}
+          </ul>
+        )} */}
+
+        <IoMdMic
+          size={"42px"}
+          className="ml-3 rounded-full p-2 cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 duration-200 hidden md:flex"
+        />
+      </div>
+
+      {/* Right - Icons & Theme */}
+      <div className="flex space-x-5 items-center">
+        <RiVideoAddLine className="text-2xl hidden md:block" />
+        <AiOutlineBell className="text-2xl hidden md:block" />
+        <img
+          className="w-6 dark:bg-white rounded-full hidden md:flex"
+          src="https://static.thenounproject.com/png/1122811-200.png"
+          alt="User Avatar"
+        />
+        {/* <ThemeToggleButton /> */}
+      </div>
+    </div>
+  );
+};
+
+export default Head;
