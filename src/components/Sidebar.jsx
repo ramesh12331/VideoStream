@@ -27,8 +27,10 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 function Sidebar() {
-  // const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
-  // if (!isMenuOpen) return null;
+  const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
+
+  // Earrly Return pattern
+  if (!isMenuOpen) return null;
 
   const sidebarItems = [
     {
