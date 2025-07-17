@@ -139,7 +139,7 @@ import { IoMdMic } from "react-icons/io";
 import { RiVideoAddLine } from "react-icons/ri";
 import { toggleMenu } from "../utils/appSlice";
 import { useDispatch, useSelector } from "react-redux";
-// import ThemeToggleButton from "./ThemeToggleButton";
+import ThemeToggleButton from "./ThemeToggleButton";
 import { YOUTUBE_SEARCH_API } from "../utils/constants";
 import { IoSearch } from "react-icons/io5";
 import { Link, useNavigate } from "react-router-dom";
@@ -268,7 +268,7 @@ const Head = () => {
           src="https://static.thenounproject.com/png/1122811-200.png"
           alt="User Avatar"
         />
-        {/* <ThemeToggleButton /> */}
+        <ThemeToggleButton />
       </div>
     </div>
   );
