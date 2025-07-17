@@ -1,4 +1,3 @@
-
 import { AiOutlineMenu, AiOutlineBell } from "react-icons/ai";
 import { CiSearch } from "react-icons/ci";
 import { IoMdMic } from "react-icons/io";
@@ -9,24 +8,29 @@ import { RiVideoAddLine } from "react-icons/ri";
 import { IoSearch } from "react-icons/io5";
 import { useDispatch } from "react-redux";
 import { toggleMenu } from "../utils/appSlice";
-
+import { Link } from "react-router-dom";
 
 const Head = () => {
   const dispatch = useDispatch();
 
-  const toggleMenuHandler = () =>{
-    dispatch(toggleMenu())
-  }
+  const toggleMenuHandler = () => {
+    dispatch(toggleMenu());
+  };
   return (
     <div className="flex bg-white justify-between px-6 py-2 shadow-lg dark:bg-gray-900 text-black dark:text-white fixed top-0 left-0 right-0 z-50">
       {/* Left - Menu & Logo */}
       <div className="flex items-center space-x-4">
-        <AiOutlineMenu onClick={toggleMenuHandler} className="text-xl cursor-pointer"/>
-        <img
-          className="w-20 dark:bg-white rounded-lg"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/1024px-Logo_of_YouTube_%282015-2017%29.svg.png"
-          alt="YouTube Logo"
+        <AiOutlineMenu
+          onClick={toggleMenuHandler}
+          className="text-xl cursor-pointer"
         />
+        <Link to="/">
+          <img
+            className="w-20 dark:bg-white rounded-lg"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/1024px-Logo_of_YouTube_%282015-2017%29.svg.png"
+            alt="YouTube Logo"
+          />
+        </Link>
       </div>
 
       {/* Center - Search Bar */}
@@ -36,13 +40,9 @@ const Head = () => {
             type="text"
             placeholder="Search"
             className="outline-none bg-transparent w-full text-black dark:text-white"
-           
           />
         </div>
-        <button
-          className="px-4 py-2 border rounded-r-full bg-gray-100 dark:bg-green-600"
-          
-        >
+        <button className="px-4 py-2 border rounded-r-full bg-gray-100 dark:bg-green-600">
           <CiSearch className="font-extrabold" />
         </button>
 

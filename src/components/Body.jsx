@@ -1,14 +1,20 @@
-import React from 'react'
-import Sidebar from './Sidebar'
-import MainContainer from './MainContainer'
+import React from "react";
+import Sidebar from "./Sidebar";
+import MainContainer from "./MainContainer";
+import Head from "./Head";
+import { Outlet } from "react-router-dom";
 
 const Body = () => {
   return (
-    <div className='flex gap-4'>
-      <Sidebar/>
-      <MainContainer/>
-    </div>
-  )
-}
+    <>
+      <Head/>
+      <div className="flex gap-4">
+        <Sidebar />
+        <Outlet/>
+        {/* <MainContainer/> */}
+      </div>
+    </>
+  );
+};
 
-export default Body
+export default Body;

@@ -172,10 +172,10 @@ function Sidebar() {
               className="flex items-center space-x-6 hover:bg-gray-300 duration-300 rounded-xl p-1"
             >
               <div className="text-xl cursor-pointer">
-                <h1>{item.icon}</h1>
+                <Link to={item.to}>{item.icon}</Link>
               </div>
               <span className="cursor-pointer">
-                <h1>{item.name}</h1>
+                <Link to={item.to}>{item.name}</Link>
               </span>
             </div>
           );
