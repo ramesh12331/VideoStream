@@ -98,7 +98,7 @@ const Head = () => {
           />
         </div>
         <button
-          className="px-4 py-2 border rounded-r-full bg-gray-100 dark:bg-green-600"
+          className="px-4 py-2 border rounded-r-full bg-gray-100 dark:bg-green-600 border-l-0"
           onClick={handleSearch}
         >
           <CiSearch className="font-extrabold" />
