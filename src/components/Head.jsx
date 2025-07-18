@@ -68,7 +68,7 @@ const Head = () => {
   };
 
   return (
-    <div className="flex justify-between px-6 py-2 shadow-lg dark:bg-gray-900 text-black dark:text-white fixed top-0 left-0 right-0 z-50">
+    <div className="flex justify-between px-6 py-2 bg-white shadow-lg dark:bg-gray-900 text-black dark:text-white fixed top-0 left-0 right-0 z-50">
       {/* Left - Menu & Logo */}
       <div className="flex items-center space-x-4">
         <AiOutlineMenu
