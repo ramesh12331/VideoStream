@@ -4,9 +4,9 @@ import Button from "./Button";
 const ButtonList = () => {
  
   return (
-   <>
+   <div className="">
    <Button/>
-   </>
+   </div>
   );
 };
 

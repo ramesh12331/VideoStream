@@ -28,7 +28,7 @@ function Button() {
           return (
             <div
               key={category}
-              className="mb-4 flex-none bg-gray-200 hover:bg-gray-300 duration-300 rounded-xl px-4 py-2 text-xs font-semibold text-gray-700 cursor-pointer"
+              className="mb-4 flex-none bg-gray-200 dark:bg-green-700 dark:text-white hover:bg-gray-300 duration-300 rounded-xl px-4 py-2 text-xs font-semibold text-gray-700 cursor-pointer"
             >
               {category}
             </div>
