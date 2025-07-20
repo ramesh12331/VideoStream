@@ -76,9 +76,14 @@ const Head = () => {
           className="text-xl cursor-pointer"
         />
         <Link to="/">
-          <img
+          {/* <img
             className="w-20 dark:bg-white rounded-lg"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/1024px-Logo_of_YouTube_%282015-2017%29.svg.png"
+            alt="YouTube Logo"
+          /> */}
+          <img
+            className="w-26 rounded-lg"
+            src="./logo.png"
             alt="YouTube Logo"
           />
         </Link>

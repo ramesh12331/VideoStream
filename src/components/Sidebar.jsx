@@ -142,22 +142,22 @@ function Sidebar() {
   const sidebarItems4 = [
     {
       id: 1,
-      name: "Youtube Premium",
+      name: "Stream Premium",
       icon: <FaYoutube />,
     },
     {
       id: 2,
-      name: "Youtube Studio",
+      name: "Stream Studio",
       icon: <SiYoutubestudio />,
     },
     {
       id: 3,
-      name: "Youtube Music",
+      name: "Stream Music",
       icon: <SiYoutubemusic />,
     },
     {
       id: 4,
-      name: "Youtube Kids",
+      name: "Stream for Kids",
       icon: <SiYoutubekids />,
     },
   ];
@@ -233,7 +233,7 @@ function Sidebar() {
               key={item.id}
               className="flex items-center space-x-6 hover:bg-gray-300 duration-300 rounded-xl p-1"
             >
-              <div className="text-xl cursor-pointer text-red-500">
+              <div className="text-xl cursor-pointer text-amber-500 text-shadow-lg/30">
                 {item.icon}
               </div>
               <span className="cursor-pointer">{item.name}</span>
@@ -246,7 +246,7 @@ function Sidebar() {
       <span className="text-xs text-gray-600 font-semibold">
         About Press Copyright <br /> Contact us Creators <br /> Advertise
         Developers <br />
-        <p className="mt-3">Terms Privacy Policy & Safety</p> How YouTube works{" "}
+        <p className="mt-3">Terms Privacy Policy & Safety</p> How Stream works{" "}
         <br /> Test new features
       </span>
       <br />
