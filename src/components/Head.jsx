@@ -106,7 +106,7 @@ const Head = () => {
           className="px-4 py-2 border rounded-r-full bg-gray-100 dark:bg-green-600 border-l-0"
           onClick={handleSearch}
         >
-          <CiSearch className="font-extrabold" />
+          <CiSearch className="font-extrabold cursor-pointer" />
         </button>
 
         {/* Suggestions Dropdown */}
@@ -132,10 +132,10 @@ const Head = () => {
 
       {/* Right - Icons & Theme */}
       <div className="flex space-x-5 items-center">
-        <RiVideoAddLine className="text-2xl hidden md:block" />
-        <AiOutlineBell className="text-2xl hidden md:block" />
+        <RiVideoAddLine className="text-2xl hidden md:block cursor-pointer" />
+        <AiOutlineBell className="text-2xl hidden md:block cursor-pointer" />
         <img
-          className="w-6 dark:bg-white rounded-full hidden md:flex"
+          className="w-6 dark:bg-white rounded-full hidden md:flex cursor-pointer"
           src="https://static.thenounproject.com/png/1122811-200.png"
           alt="User Avatar"
         />
